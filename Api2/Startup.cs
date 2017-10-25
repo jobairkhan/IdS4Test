@@ -42,7 +42,8 @@ namespace Api2
             loggerFactory.AddConsole(); // Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseAuthentication();
+            app.UseAuthentication(); // The missing line
+            
             app.UseStaticFiles();
 
             app.UseMvc();
