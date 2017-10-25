@@ -13,7 +13,7 @@ https://github.com/LisaTatum/IdentityServer4Test
 ## Answer
 https://stackoverflow.com/questions/46695567/token-from-identity-server-connection-token-is-not-valid-for-my-api/46932240#46932240
 
-have to add this into Configure method on Api startup.cs
+have to add `app.UseAuthentication();` into Configure method on Api startup.cs
 
 
 
